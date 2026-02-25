@@ -148,9 +148,6 @@ option = st.sidebar.radio(
     ]
 )
 
-st.sidebar.markdown("---")
-st.sidebar.info("Powered by Gemini 2.5 Flash")
-
 
 # --------------------------------------------------
 # Session State
@@ -269,4 +266,5 @@ if st.session_state.last_reply:
         st.markdown(
             f'<div class="response-box">{st.session_state.last_reply}</div>',
             unsafe_allow_html=True
+
         )
